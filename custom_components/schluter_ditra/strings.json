@@ -1,0 +1,44 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Schluter DITRA-HEAT account",
+        "description": "Sign in with the account you use at schluterditraheat.com.",
+        "data": {
+          "username": "Email",
+          "password": "Password"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Re-authenticate",
+        "description": "Enter the current password for {username}.",
+        "data": {
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Invalid email or password (or the account is temporarily locked).",
+      "cannot_connect": "Could not reach schluterditraheat.com."
+    },
+    "abort": {
+      "already_configured": "This account is already configured.",
+      "reauth_successful": "Re-authentication was successful."
+    }
+  },
+  "entity": {
+    "climate": {
+      "thermostat": {
+        "state_attributes": {
+          "preset_mode": {
+            "state": {
+              "none": "None",
+              "frost_protection": "Frost protection",
+              "temporary_override": "Temporary override"
+            }
+          }
+        }
+      }
+    }
+  }
+}
